@@ -11,5 +11,11 @@ def home():              #func 2
 def menu():
         return render_template("menu.html")
 
+@app.route('/contact')
+def contact():
+      return render_template("contact.html")
+
+
+
 #running an application one has to tell FLASK 
 app.run(debug=True)
