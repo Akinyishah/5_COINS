@@ -2,6 +2,7 @@ from flask import Flask,render_template
 
 app=Flask(__name__)
 
+
 @app.route('/')          #func 1
 def home():              #func 2   
     return render_template("index.html")
@@ -9,7 +10,8 @@ def home():              #func 2
 
 @app.route('/menu')
 def menu():
-        return render_template("menu.html")
+         fruits=["apple","oranges","tangerines","cauliflower","grapes"]
+         return render_template("menu.html",fruits=fruits,)
 
 @app.route('/contact')
 def contact():

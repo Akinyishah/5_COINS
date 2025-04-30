@@ -44,50 +44,131 @@
         </div>
     </nav>
     <div class="row">
-        <main class="container-fluid my-4 justify-content-between">
-            <h2 class="text-center mb-4">Our Menu</h2>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Chicken Pilau</h5>
-                        <p class="card-text">Fried Chicken, Fried rice and Cinnammon</p>
-                        <p class="card-text"><strong>Ksh550.00</strong></p>
+        {%for fruits in fruits%}
+        <ul>
+            <li>{{fruits}}</li>
+        </ul>
+        {% endfor %}
+        <main class="container-fluid justify-content-between">
+            <div class="text-center mt-4">
+                <h2 class="">Our Menu</h2>
+            </div>
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='shawarma.jpg') }}" class="img-fluid rounded-start"
+                                alt="Chicken Shawarma">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Shawarma</h5>
+                                <p class="card-text">
+                                    Marinated chicken, garlic sauce, wrapped in naan. <br>
+                                    Get the best shawarma in town! Made with fresh ingredients and authentic spices.
+                                    Perfect for lunch or dinner.
+                                </p>
+                                <p class="card-text">Medium size</p>
+                                <p class="card-text"><strong>Ksh550.00</strong></p>
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4"> 
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Chicken Shawarma</h5>
-                        <p class="card-text">Marinated chicken, garlic sauce, wrapped in naan</p>
-                        <p class="card-text">Small size </p>
-                        <p class="card-text"><strong>Ksh 760.00</strong></p>
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='shawarma.jpg') }}" class="img-fluid rounded-start"
+                                alt="Chicken Shawarma">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Shawarma</h5>
+                                <p class="card-text">
+                                    Marinated chicken, garlic sauce, wrapped in naan. <br>
+                                    Get the best shawarma in town! Made with fresh ingredients and authentic spices.
+                                    Perfect for lunch or dinner.
+                                </p>
+                                <p class="card-text">Medium size</p>
+                                <p class="card-text"><strong>Ksh550.00</strong></p>
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Chocolate Ice-cream</h5>
-                        <p class="card-text">chocolate chips, sprinkles</p>
-                        <p class="card-text">Small</p>
-                        <p class="card-text"><strong>Ksh 200.00</strong></p>
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='shawarma.jpg') }}" class="img-fluid rounded-start"
+                                alt="Chicken Shawarma">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Shawarma</h5>
+                                <p class="card-text">
+                                    Marinated chicken, garlic sauce, wrapped in naan. <br>
+                                    Get the best shawarma in town! Made with fresh ingredients and authentic spices.
+                                    Perfect for lunch or dinner.
+                                </p>
+                                <p class="card-text">Medium size</p>
+                                <p class="card-text"><strong>Ksh550.00</strong></p>
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Hawaaian Pizza</h5>
-                        <p class="card-text">ham, pineapple slicings and cheese </p>
-                        <p class="card-text">Large</p>
-                        <p class="card-text"><strong>Ksh 500.00</strong></p>
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='shawarma.jpg') }}" class="img-fluid rounded-start"
+                                alt="Chicken Shawarma">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Shawarma</h5>
+                                <p class="card-text">
+                                    Marinated chicken, garlic sauce, wrapped in naan. <br>
+                                    Get the best shawarma in town! Made with fresh ingredients and authentic spices.
+                                    Perfect for lunch or dinner.
+                                </p>
+                                <p class="card-text">Medium size</p>
+                                <p class="card-text"><strong>Ksh550.00</strong></p>
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ url_for('static', filename='shawarma.jpg') }}" class="img-fluid rounded-start"
+                                alt="Chicken Shawarma">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Shawarma</h5>
+                                <p class="card-text">
+                                    Marinated chicken, garlic sauce, wrapped in naan. <br>
+                                    Get the best shawarma in town! Made with fresh ingredients and authentic spices.
+                                    Perfect for lunch or dinner.
+                                </p>
+                                <p class="card-text">Medium size</p>
+                                <p class="card-text"><strong>Ksh550.00</strong></p>
+                                <button class="btn btn-primary">Order Now</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-    </div>
 
 
 
@@ -145,12 +226,13 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>
 
 </body>
 
